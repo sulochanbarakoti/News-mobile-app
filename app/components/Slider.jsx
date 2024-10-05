@@ -1,12 +1,12 @@
 import { View, Text } from "react-native";
 import React from "react";
 
-const BreakingNews = () => {
+const Slider = () => {
   return (
     <View>
-      <Text>BreakingNews</Text>
+      <Text>Slider</Text>
     </View>
   );
 };
 
-export default BreakingNews;
+export default Slider;
