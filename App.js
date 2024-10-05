@@ -37,7 +37,11 @@ function TabNavigator() {
         tabBarInactiveTintColor: "gray",
       })}
     >
-      <Tab.Screen name="Home" component={Home} />
+      <Tab.Screen
+        name="Home"
+        component={Home}
+        options={{ headerShown: false }}
+      />
       <Tab.Screen name="Discover" component={Discover} />
       <Tab.Screen name="Bookmark" component={Bookmark} />
       <Tab.Screen name="Settings" component={Settings} />
