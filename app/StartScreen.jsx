@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 import React from "react";
+import CustomButton from "./components/CustomButton";
 
 const StartScreen = ({ navigation }) => {
   return (
@@ -28,16 +29,16 @@ const StartScreen = ({ navigation }) => {
         />
 
         {/* Content with full opacity */}
-        <View className="flex-1 justify-end items-center pb-10 space-y-2 z-10">
+        <View className="flex-1 justify-end items-center pb-10 space-y-5 z-10">
           <Text className="font-bold text-white text-3xl">
             Welcome to Online Media
           </Text>
-          <View className="p-3 px-5 bg-red-700 rounded-xl">
-            <TouchableOpacity onPress={() => navigation.navigate("SignIn")}>
-              <Text className="text-white text-lg font-semibold">
-                Continue with Email
-              </Text>
-            </TouchableOpacity>
+          <View>
+            <CustomButton
+              title={"Continue with Email"}
+              handlePress={() => navigation.navigate("SignIn")}
+              containerStyle={"h-12 w-52"}
+            />
           </View>
         </View>
       </ImageBackground>

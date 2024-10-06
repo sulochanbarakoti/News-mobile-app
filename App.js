@@ -9,6 +9,7 @@ import Bookmark from "./app/Tabs/Bookmark";
 import Discover from "./app/Tabs/Discover";
 import Settings from "./app/Tabs/Settings";
 import StartScreen from "./app/StartScreen";
+import SignUp from "./app/SignUp";
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -59,6 +60,7 @@ export default function App() {
         <Stack.Screen name="MainTabs" component={TabNavigator} />
         <Stack.Screen name="SignIn" component={SignIn} />
         <Stack.Screen name="StartScreen" component={StartScreen} />
+        <Stack.Screen name="SignUp" component={SignUp} />
       </Stack.Navigator>
     </NavigationContainer>
   );
