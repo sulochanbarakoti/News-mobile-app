@@ -9,6 +9,7 @@ import {
 } from "react-native";
 import Header from "../components/Header";
 import Trending from "../components/Trending";
+import Slider from "../components/Slider";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { results } from "../../json";
@@ -67,8 +68,16 @@ const Home = () => {
   };
 
   return (
-    <View className="mt-8 ">
+    <View className="mt-8">
       <Header props={profileData} />
+      <View className="px-5 py-2">
+        <View>
+          <Text className="text-base font-bold pb-2">Breaking News</Text>
+        </View>
+        <View>
+          <Slider props={allNews} />
+        </View>
+      </View>
       {/* Tranding Now components */}
       <View className="p-5">
         <View>
