@@ -16,6 +16,7 @@ import { results } from "../../json";
 
 const Home = () => {
   const [allNews, setAllNews] = useState(results);
+  const [breakingNews, setBreakingNews] = useState(results);
   const [activeTab, setActiveTab] = useState("All");
   let profileData = {
     name: "John Doe",
@@ -75,7 +76,7 @@ const Home = () => {
           <Text className="text-base font-bold pb-2">Breaking News</Text>
         </View>
         <View>
-          <Slider props={allNews} />
+          <Slider props={breakingNews} />
         </View>
       </View>
       {/* Tranding Now components */}

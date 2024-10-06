@@ -48,7 +48,7 @@ const Slider = ({ navigation, props }) => {
         ref={flatListRef}
         data={props}
         renderItem={renderItem}
-        keyExtractor={(item) => item.id}
+        keyExtractor={(item) => item.article_id}
         horizontal={true} // Enable horizontal scrolling
         showsHorizontalScrollIndicator={false} // Hide scroll indicator
         snapToInterval={screenWidth * 0.8 + 20} // Snap to the width of each item
