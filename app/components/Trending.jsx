@@ -1,13 +1,14 @@
 import { View, Text, Image, ScrollView, TouchableOpacity } from "react-native";
 import React from "react";
 
-const Trending = ({ props }) => {
+const Trending = ({ navigation, props }) => {
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       <View className="py-3 space-y-3">
         {props.map((data, index) => (
           <TouchableOpacity
             key={index}
+            onPress={() => navigation.navigate("News", { params: data })}
             className="flex-row space-x-2 bg-gray-200 p-2 rounded-md"
           >
             <View className="h-24 w-24">

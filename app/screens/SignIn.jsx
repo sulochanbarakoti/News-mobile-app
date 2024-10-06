@@ -1,7 +1,7 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
-import FormField from "./components/FormField";
-import CustomButton from "./components/CustomButton";
+import FormField from "../components/FormField";
+import CustomButton from "../components/CustomButton";
 
 const SignIn = ({ navigation }) => {
   const [form, setForm] = useState({

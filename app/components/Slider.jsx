@@ -43,7 +43,7 @@ const Slider = ({ navigation, props }) => {
   };
 
   return (
-    <View className="mt-4">
+    <View>
       <FlatList
         ref={flatListRef}
         data={props}

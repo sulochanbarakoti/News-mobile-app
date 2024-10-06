@@ -7,7 +7,8 @@ export const results = [
     creator: ["Olga de Moeller"],
     video_url: null,
     description: "It’s beats any seven-seater SUV",
-    content: "ONLY AVAILABLE IN PAID PLANS",
+    content:
+      "The Kia Carnival is redefining the concept of family transportation. With spacious interiors, premium features, and a smooth driving experience, it surpasses any expectations one might have from a regular seven-seater SUV. The Carnival blends luxury with practicality, offering state-of-the-art tech features and a robust engine that ensures both comfort and power on the road. Its bold design and confident stance make it a head-turner, while the ample space inside caters to families looking for comfort without compromising style.",
     pubDate: "2024-10-05 06:19:00",
     pubDateTZ: "UTC",
     image_url:
@@ -36,7 +37,8 @@ export const results = [
     creator: null,
     video_url: null,
     description: "The market is not ready to let go of SEAT",
-    content: "ONLY AVAILABLE IN PAID PLANS",
+    content:
+      "Volkswagen has been eyeing a resurgence of its low-cost car lineup. With changing market dynamics and consumer demand for affordable, reliable vehicles on the rise, there is renewed interest in bringing back models like SEAT. The company is expected to focus on emerging markets and price-sensitive regions, where its compact and budget-friendly vehicles could thrive. Volkswagen's shift comes at a time when other automakers are also reassessing their strategies, making the competition for low-cost, high-efficiency vehicles more intense than ever.",
     pubDate: "2024-10-05 06:19:00",
     pubDateTZ: "UTC",
     image_url:
@@ -66,7 +68,8 @@ export const results = [
     video_url: null,
     description:
       "Airline defeated Captain Shreve 69-68 on Friday night in Shreveport",
-    content: "ONLY AVAILABLE IN PAID PLANS",
+    content:
+      "In an unforgettable high school football showdown, Airline High School narrowly edged out Captain Shreve in a nail-biting 69-68 victory. The game, held at Shreveport, saw numerous lead changes, thrilling plays, and standout performances from both teams. Fans were on the edge of their seats as the two rivals traded touchdowns, with Airline clinching the win in the final moments of the game. This matchup will go down as one of the most exciting in the history of both schools’ football programs.",
     pubDate: "2024-10-05 06:19:00",
     pubDateTZ: "UTC",
     image_url:
@@ -95,7 +98,8 @@ export const results = [
     creator: ["PTI"],
     video_url: null,
     description: null,
-    content: "ONLY AVAILABLE IN PAID PLANS",
+    content:
+      "A trained elephant on the set of a Telugu movie caused a stir when it unexpectedly escaped into the nearby forest. The incident took place during filming in a remote location in Kerala, where the animal broke free from its handlers and fled into the dense forest. After a 12-hour search operation, the forest department, along with local authorities, managed to track down the elephant. Fortunately, the animal was unharmed and was safely returned to its handlers. This episode has sparked discussions on the use of animals in movie productions and the need for stricter safety protocols.",
     pubDate: "2024-10-05 06:18:54",
     pubDateTZ: "UTC",
     image_url:
@@ -125,7 +129,8 @@ export const results = [
     video_url: null,
     description:
       "Canandaigua National Bank & Trust Co. decreased its stake in shares of General Electric (NYSE:GE – Free Report) by 0.7% during the 3rd quarter, according to the company in its most recent 13F filing with the Securities & Exchange Commission. The institutional investor owned 14,356 shares of the conglomerate’s stock after selling 94 shares during [...]",
-    content: "ONLY AVAILABLE IN PAID PLANS",
+    content:
+      "Canandaigua National Bank & Trust Co. recently announced that it holds $2.71 million in General Electric (GE) stocks. This move signals confidence in GE’s ability to continue its recovery and deliver shareholder value. After years of restructuring and refocusing its business operations, GE has become an attractive investment, particularly in its aviation and renewable energy segments. Analysts expect strong future performance from the company as it adapts to the rapidly evolving industrial landscape.",
     pubDate: "2024-10-05 06:18:53",
     pubDateTZ: "UTC",
     image_url:
@@ -155,7 +160,8 @@ export const results = [
     video_url: null,
     description:
       "Canandaigua National Bank & Trust Co. increased its position in Amgen Inc. (NASDAQ:AMGN – Free Report) by 1.0% in the 3rd quarter, according to the company in its most recent disclosure with the Securities and Exchange Commission (SEC). The firm owned 12,907 shares of the medical research company’s stock after purchasing an additional 125 shares [...]",
-    content: "ONLY AVAILABLE IN PAID PLANS",
+    content:
+      "In the third quarter, Canandaigua National Bank & Trust Co. expanded its holdings by purchasing 125 additional shares of Amgen Inc., a leading biotechnology company. Amgen's advancements in oncology, cardiovascular, and immunology treatments make it a strong contender in the biopharmaceutical industry. The company’s pipeline of innovative therapies and consistent financial performance continues to attract institutional investors. This acquisition reflects a long-term belief in Amgen’s potential for growth, especially in a rapidly evolving healthcare landscape.",
     pubDate: "2024-10-05 06:18:53",
     pubDateTZ: "UTC",
     image_url:
@@ -185,7 +191,8 @@ export const results = [
     video_url: null,
     description:
       "Sterneck Capital Management LLC cut its stake in shares of International Business Machines Co. (NYSE:IBM – Free Report) by 7.9% in the 3rd quarter, according to its most recent filing with the Securities & Exchange Commission. The firm owned 13,905 shares of the technology company’s stock after selling 1,186 shares during the period. International Business [...]",
-    content: "ONLY AVAILABLE IN PAID PLANS",
+    content:
+      "Sterneck Capital Management LLC recently decreased its stock holdings in IBM, selling 1,186 shares in the third quarter. This decision comes as IBM continues to shift its focus from traditional IT services to cloud computing and artificial intelligence. Although IBM has made strides in its transformation, some investors remain cautious due to the competitive pressures from cloud giants like Amazon and Microsoft. Sterneck’s reduced holdings may suggest a wait-and-see approach as IBM's leadership implements its strategic overhaul.",
     pubDate: "2024-10-05 06:18:53",
     pubDateTZ: "UTC",
     image_url:
@@ -215,7 +222,8 @@ export const results = [
     video_url: null,
     description:
       "Canandaigua National Bank & Trust Co. cut its stake in Alphabet Inc. (NASDAQ:GOOG – Free Report) by 6.3% during the third quarter, according to the company in its most recent Form 13F filing with the Securities and Exchange Commission. The fund owned 58,355 shares of the information services provider’s stock after selling 3,921 shares during [...]",
-    content: "ONLY AVAILABLE IN PAID PLANS",
+    content:
+      "Canandaigua National Bank & Trust Co. recently sold 3,921 shares of Alphabet Inc., the parent company of Google, reducing its stake by 6.3%. This move comes amidst heightened scrutiny of tech giants by regulators worldwide, especially in areas like privacy and antitrust issues. Despite this, Alphabet remains one of the most profitable companies in the world, with its core advertising business and ventures into artificial intelligence continuing to deliver strong results. Canandaigua’s sale is likely part of routine portfolio management rather than a lack of confidence in Alphabet’s future.",
     pubDate: "2024-10-05 06:18:53",
     pubDateTZ: "UTC",
     image_url: "https://www.marketbeat.com/logos/google-inc-logo-1200x675.png",
@@ -244,7 +252,8 @@ export const results = [
     video_url: null,
     description:
       "Sterneck Capital Management LLC trimmed its stake in KraneShares CSI China Internet ETF (NYSE:KWEB – Free Report) by 0.5% during the third quarter, according to its most recent disclosure with the Securities and Exchange Commission (SEC). The firm owned 122,138 shares of the company’s stock after selling 644 shares during the period. KraneShares CSI China [...]",
-    content: "ONLY AVAILABLE IN PAID PLANS",
+    content:
+      "Sterneck Capital Management LLC has announced a $4.16 million investment in KraneShares CSI China Internet ETF, which tracks leading Chinese internet companies. Despite regulatory uncertainties in China’s tech sector, investors are eyeing a potential rebound as the sector stabilizes and growth resumes. KraneShares offers exposure to top-performing companies such as Alibaba, Tencent, and JD.com, positioning itself as an attractive option for those seeking to capitalize on China’s expanding digital economy.",
     pubDate: "2024-10-05 06:18:53",
     pubDateTZ: "UTC",
     image_url:
@@ -274,7 +283,8 @@ export const results = [
     video_url: null,
     description:
       "Sterneck Capital Management LLC lessened its stake in The Walt Disney Company (NYSE:DIS – Free Report) by 1.1% in the 3rd quarter, according to the company in its most recent Form 13F filing with the SEC. The fund owned 29,145 shares of the entertainment giant’s stock after selling 320 shares during the quarter. Walt Disney [...]",
-    content: "ONLY AVAILABLE IN PAID PLANS",
+    content:
+      "Sterneck Capital Management LLC recently sold 320 shares of Walt Disney Co. stock, reducing its holdings by 1.1%. While Disney has faced challenges in its traditional media and entertainment segments, its streaming service, Disney+, continues to grow at an impressive rate. Investors have been closely watching how Disney navigates changes in consumer behavior and the broader economic environment. Sterneck’s sale may reflect a short-term tactical decision, with long-term confidence in Disney’s ability to adapt and thrive in a post-pandemic world.",
     pubDate: "2024-10-05 06:18:52",
     pubDateTZ: "UTC",
     image_url:

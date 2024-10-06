@@ -14,7 +14,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { results } from "../../json";
 
-const Home = () => {
+const Home = ({ navigation }) => {
   const [allNews, setAllNews] = useState(results);
   const [breakingNews, setBreakingNews] = useState(results);
   const [activeTab, setActiveTab] = useState("All");
@@ -69,9 +69,9 @@ const Home = () => {
   };
 
   return (
-    <View className="mt-8">
+    <View className="mt-10">
       <Header props={profileData} />
-      <View className="px-5 py-2">
+      <View className="px-5 py-1">
         <View>
           <Text className="text-base font-bold pb-2">Breaking News</Text>
         </View>
@@ -80,11 +80,11 @@ const Home = () => {
         </View>
       </View>
       {/* Tranding Now components */}
-      <View className="p-5">
+      <View className="px-5 py-2">
         <View>
           <Text className="text-base font-bold pb-2">Trending Right Now</Text>
         </View>
-        <View className="pb-5">
+        <View className="pb-1">
           <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
             <View className="flex-row  gap-4">
               {tabs.map((tab, index) => (
@@ -117,7 +117,7 @@ const Home = () => {
           </ScrollView>
         </View>
         {/* Trending posts */}
-        <Trending props={allNews} />
+        <Trending props={allNews} navigation={navigation} />
       </View>
       <StatusBar style="auto" />
     </View>
