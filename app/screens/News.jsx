@@ -1,18 +1,39 @@
-import { View, Text, ScrollView, Image } from "react-native";
+import { View, Text, ScrollView, Image, TouchableOpacity } from "react-native";
 import React from "react";
+import AntDesign from "@expo/vector-icons/AntDesign";
+import Ionicons from "@expo/vector-icons/Ionicons";
 
-const News = ({ route }) => {
+const News = ({ route, navigation }) => {
   const article = route.params.params;
-  console.log(article);
+
+  const [save, setSave] = React.useState(false);
+
   return (
-    <ScrollView className="bg-gray-100 flex-1">
+    <ScrollView className="bg-gray-100 flex-1 pt-10">
       {/* Article Image */}
       <Image
         source={{ uri: article.image_url }}
-        className="w-full h-56"
+        className="w-full h-72"
         resizeMode="cover"
       />
-
+      <View className="absolute top-0 w-full">
+        <View className="flex-row justify-between items-center px-4 py-2">
+          <TouchableOpacity onPress={() => navigation.goBack()}>
+            <Ionicons
+              name="chevron-back-circle-sharp"
+              size={40}
+              color="white"
+            />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => setSave(!save)}>
+            {save ? (
+              <AntDesign name="heart" size={28} color="red" />
+            ) : (
+              <AntDesign name="hearto" size={28} color="red" />
+            )}
+          </TouchableOpacity>
+        </View>
+      </View>
       <View className="px-4 py-6">
         {/* Article Title */}
         <Text className="text-2xl font-bold text-gray-900">

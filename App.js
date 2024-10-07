@@ -66,11 +66,7 @@ export default function App() {
         <Stack.Screen name="SignIn" component={SignIn} />
         <Stack.Screen name="StartScreen" component={StartScreen} />
         <Stack.Screen name="SignUp" component={SignUp} />
-        <Stack.Screen
-          name="News"
-          component={News}
-          options={{ headerShown: true }}
-        />
+        <Stack.Screen name="News" component={News} />
       </Stack.Navigator>
     </NavigationContainer>
   );
