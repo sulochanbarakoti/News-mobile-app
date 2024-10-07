@@ -49,7 +49,11 @@ function TabNavigator() {
         component={Discover}
         options={{ headerShown: false }}
       />
-      <Tab.Screen name="Bookmark" component={Bookmark} />
+      <Tab.Screen
+        name="Bookmark"
+        component={Bookmark}
+        options={{ headerShown: true }}
+      />
       <Tab.Screen name="Settings" component={Settings} />
     </Tab.Navigator>
   );
