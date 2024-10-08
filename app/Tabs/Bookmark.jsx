@@ -3,31 +3,37 @@ import React from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { results } from "../../json";
 
-const Bookmark = () => {
+const Bookmark = ({ navigation }) => {
   const [bookmark, setBookmark] = React.useState({});
   React.useEffect(() => {
-    const checkSaved = async () => {
+    const fetchBookmarks = async () => {
       try {
         const savedArticles = await AsyncStorage.getItem("savedArticles");
         const currentSavedArticle = savedArticles
           ? JSON.parse(savedArticles)
           : [];
 
-        console.log(currentSavedArticle.length); // Set the state accordingly
-        const matchArticles = results.filter((item) =>
+        // Assuming you have a `results` or list of articles somewhere
+        const matchedArticles = results.filter((item) =>
           currentSavedArticle.includes(item.article_id)
         );
-        setBookmark(matchArticles);
-        console.log(bookmark);
+
+        setBookmark(matchedArticles);
       } catch (error) {
-        console.error("Failed to check saved article", error);
+        console.error("Failed to fetch saved articles", error);
       }
     };
-    checkSaved();
+
+    const unsubscribe = navigation.addListener("focus", () => {
+      fetchBookmarks();
+    });
+
+    // Clean up the listener on unmount
+    return unsubscribe;
   }, [results]);
   return (
     <View className="p-5">
-      {/* <ScrollView showsVerticalScrollIndicator={false}>
+      <ScrollView showsVerticalScrollIndicator={false}>
         <View className="py-3 space-y-3">
           {bookmark.map((data, index) => (
             <TouchableOpacity
@@ -72,7 +78,7 @@ const Bookmark = () => {
             </TouchableOpacity>
           ))}
         </View>
-      </ScrollView> */}
+      </ScrollView>
     </View>
   );
 };
