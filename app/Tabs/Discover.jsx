@@ -12,8 +12,9 @@ const Discover = ({ navigation }) => {
       </View>
       <View>
         <View>
-          <Text>Categories</Text>
+          <Text className="font-bold">Categories</Text>
         </View>
+        <View></View>
       </View>
     </View>
   );
