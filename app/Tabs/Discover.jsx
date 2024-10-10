@@ -4,6 +4,39 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 
 const Discover = ({ navigation }) => {
+  const [selectedCategories, setSelectedCategories] = useState([]);
+  const [selectedCountries, setSelectedCountries] = useState([]);
+
+  // Handle category selection
+  const handleCategoryPress = (category) => {
+    if (category === "All") {
+      setSelectedCategories(["All"]);
+    } else {
+      setSelectedCategories((prevSelected) => {
+        if (prevSelected.includes(category)) {
+          return prevSelected.filter((item) => item !== category);
+        } else {
+          return [...prevSelected.filter((item) => item !== "All"), category];
+        }
+      });
+    }
+  };
+
+  // Handle country selection
+  const handleCountryPress = (country) => {
+    if (country === "All") {
+      setSelectedCountries(["All"]);
+    } else {
+      setSelectedCountries((prevSelected) => {
+        if (prevSelected.includes(country)) {
+          return prevSelected.filter((item) => item !== country);
+        } else {
+          return [...prevSelected.filter((item) => item !== "All"), country];
+        }
+      });
+    }
+  };
+
   // Chip component
   const Chip = ({ label, isSelected, onPress }) => {
     return (
