@@ -1,11 +1,41 @@
-import { View, Text, TextInput } from "react-native";
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  FlatList,
+  ScrollView,
+  TextInput,
+} from "react-native";
 import React from "react";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 
+// Sample data for categories and countries
+const categories = [
+  "All",
+  "Politics",
+  "Science",
+  "Entertainment",
+  "Sports",
+  "Technology",
+  "Business",
+];
+const countries = [
+  "All",
+  "India",
+  "Australia",
+  "United Arab Emirates",
+  "United Kingdom",
+  "United States",
+  "France",
+  "Germany",
+  "Japan",
+  "Israel",
+];
+
 const Discover = ({ navigation }) => {
-  const [selectedCategories, setSelectedCategories] = useState([]);
-  const [selectedCountries, setSelectedCountries] = useState([]);
+  const [selectedCategories, setSelectedCategories] = React.useState([]);
+  const [selectedCountries, setSelectedCountries] = React.useState([]);
 
   // Handle category selection
   const handleCategoryPress = (category) => {
@@ -55,24 +85,15 @@ const Discover = ({ navigation }) => {
     );
   };
   return (
-    // <View className="mx-5 mt-16 space-y-5">
-    //   <View className="bg-slate-300 flex-row p-2 rounded-xl space-x-2">
-    //     <Ionicons name="search" size={24} color="white" />
-    //     <TextInput placeholder="Search" />
-    //   </View>
-    //   <View>
-    //     <View>
-    //       <Text className="font-bold">Categories</Text>
-    //     </View>
-    //     <View></View>
-    //   </View>
-    // </View>
     <ScrollView style={{ padding: 20, backgroundColor: "#fff", flex: 1 }}>
-      {/* Search Bar can be added here if needed */}
+      <View className=" mt-5 mb-5 space-y-5">
+        <View className="bg-slate-300 flex-row p-2 rounded-xl space-x-2">
+          <Ionicons name="search" size={24} color="white" />
+          <TextInput placeholder="Search" />
+        </View>
+      </View>
       {/* Categories */}
-      <Text style={{ fontSize: 18, fontWeight: "bold", marginBottom: 10 }}>
-        Categories
-      </Text>
+      <Text className="text-xl font-bold mb-4">Categories</Text>
       <FlatList
         data={categories}
         renderItem={({ item }) => (
@@ -89,16 +110,7 @@ const Discover = ({ navigation }) => {
       />
 
       {/* Country */}
-      <Text
-        style={{
-          fontSize: 18,
-          fontWeight: "bold",
-          marginTop: 20,
-          marginBottom: 10,
-        }}
-      >
-        Country
-      </Text>
+      <Text className="text-xl font-bold mt-10 mb-">Country</Text>
       <FlatList
         data={countries}
         renderItem={({ item }) => (
@@ -114,23 +126,16 @@ const Discover = ({ navigation }) => {
         scrollEnabled={false}
       />
 
-      {/* Add a button to trigger fetching news */}
       <TouchableOpacity
-        style={{
-          backgroundColor: "#FF6347",
-          padding: 15,
-          borderRadius: 10,
-          marginTop: 20,
-          alignItems: "center",
-        }}
+        className="bg-primary p-3 rounded-xl mt-4"
         onPress={() => {
-          // Pass selected categories and countries to fetch news from API
           console.log("Selected Categories:", selectedCategories);
           console.log("Selected Countries:", selectedCountries);
-          // Here you can trigger the API call with the selected data
         }}
       >
-        <Text style={{ color: "white", fontWeight: "bold" }}>Fetch News</Text>
+        <Text className="text-white font-bold text-center text-lg">
+          Discover News
+        </Text>
       </TouchableOpacity>
     </ScrollView>
   );

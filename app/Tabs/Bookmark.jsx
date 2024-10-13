@@ -4,7 +4,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { results } from "../../json";
 
 const Bookmark = ({ navigation }) => {
-  const [bookmark, setBookmark] = React.useState({});
+  const [bookmark, setBookmark] = React.useState([]);
   React.useEffect(() => {
     const fetchBookmarks = async () => {
       try {
