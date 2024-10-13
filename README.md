@@ -16,12 +16,12 @@
 <h2>🖼️ Screenshots</h2>
 <p>Below are some screenshots of the app:</p>
 <div style="display: flex; gap: 10px;">  
-    <img src="./picture/1.jpg" alt="Screenshot 1" width="150" />
+    <img src="./picture/1.png" alt="Screenshot 1" width="150" />
 <!--   <img src="./picture/useLocation.jpg" alt="Screenshot 2" width="150" /> -->
-    <img src="./picture/2.jpg" alt="Screenshot 3" width="150" />
-    <img src="./picture/3.jpg" alt="Screenshot 3" width="150" />
-    <img src="./picture/4.jpg" alt="Screenshot 3" width="150" />
-    <img src="./picture/5.jpg" alt="Screenshot 3" width="150" />
+    <img src="./picture/2.png" alt="Screenshot 3" width="150" />
+    <img src="./picture/3.png" alt="Screenshot 3" width="150" />
+    <img src="./picture/4.png" alt="Screenshot 3" width="150" />
+    <img src="./picture/5.png" alt="Screenshot 3" width="150" />
 </div>
 
 <p>
