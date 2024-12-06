@@ -1,12 +1,11 @@
 import { StatusBar } from "expo-status-bar";
 import {
-  SafeAreaView,
   ScrollView,
-  StyleSheet,
   Text,
   TouchableOpacity,
   View,
 } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import Header from "../components/Header";
 import Trending from "../components/Trending";
 import Slider from "../components/Slider";
@@ -69,7 +68,8 @@ const Home = ({ navigation }) => {
   };
 
   return (
-    <View className="mt-10">
+    <SafeAreaView className="flex-1">
+    <View className="mt-0">
       <Header props={profileData} />
       <View className="px-5 py-1">
         <View>
@@ -121,6 +121,7 @@ const Home = ({ navigation }) => {
       </View>
       <StatusBar style="auto" />
     </View>
+      </SafeAreaView>
   );
 };
 

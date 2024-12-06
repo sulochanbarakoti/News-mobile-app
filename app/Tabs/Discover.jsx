@@ -6,6 +6,7 @@ import {
   ScrollView,
   TextInput,
 } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import React from "react";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
@@ -85,59 +86,61 @@ const Discover = ({ navigation }) => {
     );
   };
   return (
-    <ScrollView style={{ padding: 20, backgroundColor: "#fff", flex: 1 }}>
-      <View className=" mt-5 mb-5 space-y-5">
-        <View className="bg-slate-300 flex-row p-2 rounded-xl space-x-2">
-          <Ionicons name="search" size={24} color="white" />
-          <TextInput placeholder="Search" />
+    <SafeAreaView className="flex-1">
+      <ScrollView style={{ padding: 20, backgroundColor: "#fff", flex: 1 }}>
+        <View className="mb-5 space-y-5">
+          <View className="bg-slate-300 flex-row p-2 rounded-xl space-x-2">
+            <Ionicons name="search" size={24} color="white" />
+            <TextInput placeholder="Search" />
+          </View>
         </View>
-      </View>
-      {/* Categories */}
-      <Text className="text-xl font-bold mb-4">Categories</Text>
-      <FlatList
-        data={categories}
-        renderItem={({ item }) => (
-          <Chip
-            label={item}
-            isSelected={selectedCategories.includes(item)}
-            onPress={() => handleCategoryPress(item)}
-          />
-        )}
-        keyExtractor={(item) => item}
-        horizontal={false}
-        numColumns={3}
-        scrollEnabled={false}
-      />
+        {/* Categories */}
+        <Text className="text-xl font-bold mb-4">Categories</Text>
+        <FlatList
+          data={categories}
+          renderItem={({ item }) => (
+            <Chip
+              label={item}
+              isSelected={selectedCategories.includes(item)}
+              onPress={() => handleCategoryPress(item)}
+            />
+          )}
+          keyExtractor={(item) => item}
+          horizontal={false}
+          numColumns={3}
+          scrollEnabled={false}
+        />
 
-      {/* Country */}
-      <Text className="text-xl font-bold mt-10 mb-">Country</Text>
-      <FlatList
-        data={countries}
-        renderItem={({ item }) => (
-          <Chip
-            label={item}
-            isSelected={selectedCountries.includes(item)}
-            onPress={() => handleCountryPress(item)}
-          />
-        )}
-        keyExtractor={(item) => item}
-        horizontal={false}
-        numColumns={3}
-        scrollEnabled={false}
-      />
+        {/* Country */}
+        <Text className="text-xl font-bold mt-10 mb-">Country</Text>
+        <FlatList
+          data={countries}
+          renderItem={({ item }) => (
+            <Chip
+              label={item}
+              isSelected={selectedCountries.includes(item)}
+              onPress={() => handleCountryPress(item)}
+            />
+          )}
+          keyExtractor={(item) => item}
+          horizontal={false}
+          numColumns={3}
+          scrollEnabled={false}
+        />
 
-      <TouchableOpacity
-        className="bg-primary p-3 rounded-xl mt-4"
-        onPress={() => {
-          console.log("Selected Categories:", selectedCategories);
-          console.log("Selected Countries:", selectedCountries);
-        }}
-      >
-        <Text className="text-white font-bold text-center text-lg">
-          Discover News
-        </Text>
-      </TouchableOpacity>
-    </ScrollView>
+        <TouchableOpacity
+          className="bg-primary p-3 rounded-xl mt-4"
+          onPress={() => {
+            console.log("Selected Categories:", selectedCategories);
+            console.log("Selected Countries:", selectedCountries);
+          }}
+        >
+          <Text className="text-white font-bold text-center text-lg">
+            Discover News
+          </Text>
+        </TouchableOpacity>
+      </ScrollView>
+    </SafeAreaView>
   );
 };
 
