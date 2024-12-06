@@ -55,11 +55,7 @@ const Bookmark = ({ navigation }) => {
                   </Text>
                 </View>
                 <View className="flex-1 pb-5">
-                  <Text
-                    className="text-sm font-semibold"
-                    numberOfLines={2}
-                    // ellipsizeMode="tail"
-                  >
+                  <Text className="text-sm font-semibold" numberOfLines={2}>
                     {data.title}
                   </Text>
                 </View>
